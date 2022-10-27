@@ -1,15 +1,24 @@
 {
   "name": "mind",
   "version": "0.0.0",
+  "packageManager": "pnpm@7.14.0",
   "description": "",
+  "license": "MIT",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "tauri": "tauri"
+    "tauri": "tauri",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "simple-git-hooks"
   },
-  "license": "MIT",
+  "dependencies": {
+    "@colid/core": "^0.0.4",
+    "@tauri-apps/api": "^1.1.0",
+    "solid-js": "^1.4.7"
+  },
   "devDependencies": {
     "@antfu/eslint-config": "^0.27.0",
     "@iconify-json/carbon": "^1.1.9",
@@ -17,16 +26,22 @@
     "@types/node": "^18.7.10",
     "@unocss/reset": "^0.46.0",
     "eslint": "^8.26.0",
+    "lint-staged": "^13.0.3",
+    "pnpm": "^7.14.0",
+    "simple-git-hooks": "^2.8.1",
     "typescript": "^4.7.4",
     "unocss": "^0.46.0",
     "unocss-preset-scrollbar": "^0.2.1",
     "vite": "^3.0.0",
     "vite-plugin-solid": "^2.3.0"
   },
-  "dependencies": {
-    "@colid/core": "^0.0.4",
-    "@tauri-apps/api": "^1.1.0",
-    "solid-js": "^1.4.7"
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,yaml,yml}": [
+      "eslint --fix"
+    ]
   },
   "eslintConfig": {
     "extends": "@antfu"

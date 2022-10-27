@@ -1,7 +1,7 @@
 {
-    "cSpell.words": [
-        "esbuild",
-        "tauri",
-        "unocss"
-    ]
+  "cSpell.words": ["esbuild", "tauri", "unocss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.formatOnSave": false
 }
