@@ -1,0 +1,25 @@
+.button-base {
+  --at-apply: inline-flex justify-center items-center w-auto h-auto px-4 py-2 rounded;
+}
+
+.button-default {
+  --at-apply: bg-transparent border-1 border-gray;
+}
+
+.button-success {
+  --at-apply: bg-green-5/85 hover:bg-green-5;
+}
+
+.button-danger {
+  --at-apply: bg-red/85 hover:bg-red;
+}
+
+.button-primary {
+  --at-apply: bg-blue/85 hover:bg-blue;
+}
+
+.button-warning {
+  --at-apply: bg-yellow/85 hover:bg-yellow;
+}
+
+
