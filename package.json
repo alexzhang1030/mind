@@ -1,7 +1,7 @@
 {
   "name": "mind",
   "version": "0.0.0",
-  "packageManager": "pnpm@7.14.0",
+  "packageManager": "pnpm@7.14.1",
   "description": "",
   "license": "MIT",
   "scripts": {
