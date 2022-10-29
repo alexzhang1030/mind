@@ -5,8 +5,8 @@
   "description": "",
   "license": "MIT",
   "scripts": {
-    "start": "vite",
-    "dev": "vite",
+    "start": "pnpm run dev",
+    "dev": "vite --open",
     "build": "vite build",
     "serve": "vite preview",
     "tauri": "tauri",

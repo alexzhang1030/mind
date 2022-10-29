@@ -1,5 +1,5 @@
 import Container from './layout/Container'
-import './assets/global.css'
+import '@/styles/global.css'
 import Left from './components/Left'
 import Right from './components/Right'
 
