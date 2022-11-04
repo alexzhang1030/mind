@@ -3,6 +3,7 @@ import type { Accessor } from 'solid-js'
 import { createRenderEffect } from 'solid-js'
 import { createStore } from 'solid-js/store'
 import { useDialog } from '../composable/useDialog'
+import { useLoading } from '../composable/useLoading'
 
 type Accessors = [Accessor<string>, (v: string) => void]
 
@@ -50,18 +51,18 @@ export const ImportDialog = () => {
     </div>
   )
 }
+const { setShow: setLoadingShow } = useLoading()
 
 const { setShow: setImportShow } = useDialog({
   title: 'Add Website',
   content: <ImportDialog />,
   async onConfirm() {
+    setLoadingShow(true)
+    const res = await invoke<{ title: string; desc: string }>('fetch_title_description', { link: form.link })
+    setLoadingShow(false)
+
     // eslint-disable-next-line no-console
-    console.log(form)
-    const res = await invoke('fetch_title_description', { link: 'https://baidu.com' })
-    // eslint-disable-next-line no-console
-    console.log({
-      res,
-    })
+    console.log(res)
   },
 })
 

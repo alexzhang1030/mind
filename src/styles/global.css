@@ -20,14 +20,17 @@ body {
   --at-apply: relative;
 }
 
-.dialog-overlay {
+.dialog-overlay,
+.loading-overlay {
   --at-apply: w-full h-full absolute left-0 top-0 bg-black/50 dark:bg-black/60 flex justify-center items-center;
 }
 
-.dialog-overlay-show {
+.dialog-overlay-show,
+.loading-overlay-show {
   --at-apply: flex;
 }
 
-.dialog-overlay-hidden {
+.dialog-overlay-hidden,
+.loading-overlay-hidden {
   --at-apply: hidden;
 }

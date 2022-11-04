@@ -6,10 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "pnpm run dev",
-    "dev": "vite --open",
+    "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "tauri": "tauri",
+    "t": "tauri",
+    "td": "tauri dev",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
     "prepare": "simple-git-hooks"
