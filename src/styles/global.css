@@ -25,12 +25,26 @@ body {
   --at-apply: w-full h-full absolute left-0 top-0 bg-black/50 dark:bg-black/60 flex justify-center items-center;
 }
 
+.message-container {
+  --at-apply: w-full absolute left-0 top-8 flex justify-center items-center;
+}
+
+.message-wrapper {
+  --at-apply: bg-[var(--dp-color)] pl-4 pr-2 py-2 text-[var(--p-text)] dark:text-[var(--dp-text)] flex justify-center items-center rounded;
+}
+
 .dialog-overlay-show,
-.loading-overlay-show {
+.loading-overlay-show,
+.message-container-show {
   --at-apply: flex;
 }
 
 .dialog-overlay-hidden,
-.loading-overlay-hidden {
+.loading-overlay-hidden,
+.message-container-hidden {
   --at-apply: hidden;
+}
+
+.aaa {
+  margin-left: 50px;
 }
