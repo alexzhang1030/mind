@@ -26,7 +26,7 @@
     "@iconify-json/icon-park-outline": "^1.1.6",
     "@tauri-apps/cli": "^1.1.0",
     "@types/node": "^18.7.10",
-    "@unocss/reset": "^0.46.0",
+    "@unocss/reset": "^0.47.0",
     "eslint": "^8.26.0",
     "lint-staged": "^13.0.3",
     "pnpm": "^7.14.0",

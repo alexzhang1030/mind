@@ -8,7 +8,7 @@ specifiers:
   '@tauri-apps/api': ^1.1.0
   '@tauri-apps/cli': ^1.1.0
   '@types/node': ^18.7.10
-  '@unocss/reset': ^0.46.0
+  '@unocss/reset': ^0.47.0
   eslint: ^8.26.0
   lint-staged: ^13.0.3
   pnpm: ^7.14.0
@@ -31,7 +31,7 @@ devDependencies:
   '@iconify-json/icon-park-outline': 1.1.6
   '@tauri-apps/cli': 1.1.1
   '@types/node': 18.11.7
-  '@unocss/reset': 0.46.0
+  '@unocss/reset': 0.47.1
   eslint: 8.26.0
   lint-staged: 13.0.3
   pnpm: 7.14.0
@@ -1017,6 +1017,10 @@ packages:
 
   /@unocss/reset/0.46.0:
     resolution: {integrity: sha512-+zbdk4nlfIvSooDwyhuXxbgYOnrDMDskIXz+Jn/FzPooEpwNoOryKc+lzaP6YZdJ1bFK8oeF/lCNha8kbTBDpQ==}
+    dev: true
+
+  /@unocss/reset/0.47.1:
+    resolution: {integrity: sha512-FIvtapdIZZ9cTOghj0o+FCk/OrTANEilp+NY5mqV09/HgxFZuk5cDAscxVAInJ4f4cb92RXNym5EnnqNhBSgvA==}
     dev: true
 
   /@unocss/scope/0.46.0:
