@@ -21,7 +21,7 @@
     "solid-js": "^1.4.7"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.33.0",
+    "@antfu/eslint-config": "^0.34.0",
     "@iconify-json/carbon": "^1.1.9",
     "@iconify-json/icon-park-outline": "^1.1.6",
     "@tauri-apps/cli": "^1.1.0",
